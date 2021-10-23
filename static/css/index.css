@@ -1,0 +1,205 @@
+/* 
+    Modelo de caja de TODOS LOS ELEMENTOS:
+    - elemento en sí
+    - padding (separacion interna) (top, bottom, left, rigth)
+    - border (1px, 3px)
+    - margin (separacion externa) (top, bottom, left, rigth)
+*/
+
+/*
+    1. Modelo de caja (width, height, padding, margin, border, box-sizing)
+    2. Display (flex, grid, align-item, justify-content)
+    3. Tipografia
+    4. Elementos visuales (color, background-color)
+    5. Otros
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(201, 11%, 66%);
+}
+
+h1, h2, h3, h4, a  {
+    color: hsl(210, 10%, 33%);
+}
+
+button {
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, .2);
+}
+.button-primary {
+    background-color: hsl(171, 66%, 44%);
+    margin-right: 12px;
+}
+.button-secondary {
+    background-color: hsl(233, 100%, 69%);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+}
+.header-logo {
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+.header-logo img {
+    width: 80px;
+}
+.header h1 {
+    font-size: 30px;
+}
+.header p {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.header-buttons {
+    margin-top: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    margin-top: 120px;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.feature-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.feature-description p{
+    max-width: 500px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.feature-content {
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.feature-items {
+    margin-top: 60px;
+}
+.feature-content .item {
+    margin-bottom: 20px;
+}
+.feature-content .item h3 {
+    margin-bottom: 15px;
+}
+.feature-content .item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.feature-image-container {
+    max-width: 600px;
+    margin: auto;
+}
+.feature-image-container img {
+    width: 100%;
+    height: 100%;
+}
+.feature-tools {
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.feature-tools-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+.feature-tools-item h4{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.trademarks {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.download p {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.download h2 {
+    font-size: 30px;
+}
+.download-buttons {
+    margin-top: 30px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color:  #f5f6f8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 120px;
+}
+.footer-icon img{
+    width: 45px;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.footer-links a {
+    text-decoration: none;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
